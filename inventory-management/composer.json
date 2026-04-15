@@ -1,0 +1,29 @@
+{
+  "name": "fahri/inventory-management",
+  "type": "project",
+  "description": "Laravel 10 inventory management system",
+  "require": {
+    "php": "^8.1",
+    "laravel/framework": "^10.0",
+    "laravel/sanctum": "^3.0"
+  },
+  "require-dev": {
+    "fakerphp/faker": "^1.9",
+    "laravel/breeze": "^1.29",
+    "nunomaduro/collision": "^7.0",
+    "phpunit/phpunit": "^10.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "dev": [
+      "php artisan serve"
+    ]
+  }
+}
